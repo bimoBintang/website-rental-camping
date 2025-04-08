@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-
+  output: "standalone", 
   images: {
-    domains: ['localhost'],
+    domains: ['localhost', 'website-rental-camping.vercel.app'],
   },
 };
 
 export default nextConfig;
+

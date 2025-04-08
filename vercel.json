@@ -1,11 +1,5 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "next.config.js",
-        "use": "@vercel/next"
-      }
-    ],
     "env": {
       "DATABASE_URL": "postgresql://neondb_owner:npg_eM3AIvXH2YhU@ep-mute-moon-a59x5go9-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require",
       "NEXT_SECRET": "JnSPjXVQ3WlO98vjBwyqPIW+FULaOjY49/QmMW6t7F50BzVXm4T+R/MRgOAn/7P5qVFWkD70IyV4tJaZaFbq8A==",
