@@ -32,5 +32,5 @@ export function middleware(req: NextRequest) {
 
 // Middleware akan dijalankan hanya di path tertentu
 export const config = {
-  matcher: ["/dashboard/:path*", "/auth", "/api/upload"],
+  matcher: ["/((?!api/auth|api/upload|_next/static|_next/image|favicon.ico).*)"],
 };
