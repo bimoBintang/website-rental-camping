@@ -1,0 +1,10 @@
+{
+  "overrides": [
+    {
+      "files": ["src/lib/prisma.ts"],
+      "rules": {
+        "no-var": "off"
+      }
+    }
+  ]
+}
