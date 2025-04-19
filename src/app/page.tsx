@@ -17,10 +17,8 @@ export default async function Home() {
   const product = await getProduct();
   return (
     <main className="min-h-screen">
-      
-      
       {/* Hero Section */}
-      <HeroSection banner={banner[0]}/>
+      <HeroSection banner={banner}/>
 
       {/* Features Section */}
       <FeaturesSection />
@@ -47,8 +45,6 @@ export default async function Home() {
       <ContactSection>
         <ContactForm contact={submitContactForm} />
       </ContactSection>
-
-      
     </main>
   );
 }

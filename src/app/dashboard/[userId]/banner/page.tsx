@@ -150,7 +150,7 @@ export default function BannerPage() {
   if (isLoading && !error) {
     return (
       <div className="max-w-6xl mx-auto p-4 flex justify-center items-center h-64">
-        <div className="text-xl text-gray-600">Loading products...</div>
+        <div className="text-xl text-gray-600">Loading banners...</div>
       </div>
     );
   }

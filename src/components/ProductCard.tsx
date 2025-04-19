@@ -23,7 +23,7 @@ interface ProductCardProps {
 const WHATSAPP_NUMBER = "6281210347782"; // Format internasional, tanpa tanda +
 
 const ProductCard = ({ product }: ProductCardProps) => {
-  const imageFullUrl = `${getBaseUrl()}${product.imageUrl}`;
+  const imageFullUrl = `${getBaseUrl()} ${product.imageUrl}`;
   const handleWhatsAppOrder = (type: "beli" | "sewa") => {
     const message =
       type === "beli"
@@ -70,12 +70,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
           </div>
         </div>
 
-        <div className="flex space-x-3">
+        <div className="flex space-x-2 sm:space-x-3">
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             onClick={() => handleWhatsAppOrder("sewa")}
-            className="bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-4 rounded-lg font-medium transition-colors w-full"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white py-1.5 sm:py-2 px-3 sm:px-4 rounded-lg text-sm sm:text-base font-medium transition-colors w-full"
           >
             Sewa
           </motion.button>
@@ -83,7 +83,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             onClick={() => handleWhatsAppOrder("beli")}
-            className="border border-emerald-600 text-emerald-600 hover:bg-emerald-50 py-2 px-4 rounded-lg font-medium transition-colors w-full"
+            className="border border-emerald-600 text-emerald-600 hover:bg-emerald-50 py-1.5 sm:py-2 px-3 sm:px-4 rounded-lg text-sm sm:text-base font-medium transition-colors w-full"
           >
             Beli
           </motion.button>
